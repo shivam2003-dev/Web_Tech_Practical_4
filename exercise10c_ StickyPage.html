@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise #10c : Sticky Page</title>
+</head>
+<body>
+	<a href="#">
+		<h3 style="color: orange; text-decoration: underline;font-weight: bold;">Sticky Page</h3>
+	</a>
+	<p>Create a HTML document that the user cannot navigate away from. If the user tries to enter a
+		URL into the address bar, click a bookmark, or use the search box, the browser should remain
+		at the same location. The browser should stay at this location no matter how many times the
+		user tries to navigate away.</p>
+</body>
+<script type="text/javascript">
+	window.onbeforeunload = function() {
+	  setTimeout(function() {document.location.reload()}, 0);
+	} 
+  </script>
+
+</html>
